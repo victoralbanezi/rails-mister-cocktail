@@ -1,1 +1,26 @@
-<h2><%= @cocktail.name %></h2>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/featured/?cocktail/286x180);">
+  <div class="container">
+    <h1 class="text-center"><%=@cocktail.name%> </h1>
+  </div>
+</div>
+
+
+
+
+
+
+<h2>Ingredients:</h2>
+<% @cocktail.doses.each do |dose| %>
+
+<p><%= dose.ingredient.name %> - <%= dose.description %> <%= link_to  "Delete", teste_path(dose), method: :delete, data: {confirm: "Are you sure?"}%></p>
+
+
+
+
+
+
+<% end %>
+
+<%= link_to  "Add Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+
