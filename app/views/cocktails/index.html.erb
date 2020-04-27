@@ -10,17 +10,15 @@
 
 <div class="container">
 
-<div class="d-inline-flex p-2 bd-highlight">
-<div class="col">
+  <div class="d-inline-flex p-2 bd-highlight">
     <% @cocktails.each do |cocktail| %>
-<div class="card m-2" style="width: 18rem;">
-<%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
-<div class="card-body">
-    <h5 class="card-title"><%= cocktail.name %></h5>
-    <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary" %>
+      <div class="card m-2" style="width: 18rem;">
+        <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
+          <div class="card-body">
+            <h5 class="card-title"><%= cocktail.name %></h5>
+              <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary" %>
+          </div>
+      </div>
+    <% end %> 
   </div>
-</div>
-<% end %> 
-</div>
-</div>
 </div>
