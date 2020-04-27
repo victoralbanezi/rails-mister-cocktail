@@ -15,3 +15,21 @@ import "bootstrap";
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+$ (function () {
+    AOS.init ();
+});
+
+import { initUpdateNavbarOnScroll } from '../components/navbar';
+import { initSelect2 } from '../components/init_select2';
+import { loadDynamicBannerText } from '../components/banner';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  initSelect2();
+  loadDynamicBannerText();
+  initUpdateNavbarOnScroll();
+});
+
+

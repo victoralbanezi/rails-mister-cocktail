@@ -7,13 +7,19 @@
 
 
 
+<div class="container">
 
-
-
+<div class="d-flex justify-content-between">
+<div class="cocktails">
 <h2>Ingredients:</h2>
 <% @cocktail.doses.each do |dose| %>
 
-<p><%= dose.ingredient.name %> - <%= dose.description %> <%= link_to  "Delete", teste_path(dose), method: :delete, data: {confirm: "Are you sure?"}%></p>
+<p><%= dose.ingredient.name %> - <%= dose.description %> 
+<%= link_to "Remove ",
+ dose_path(dose),
+  method: :delete,
+  data: {confirm: "Are you sure ?" } %></p>
+  
 
 
 
@@ -21,6 +27,19 @@
 
 
 <% end %>
+</div>
 
-<%= link_to  "Add Dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+
+<%= simple_form_for [@cocktail, @dose]  do |f| %>
+<%= f.input :description %>
+<%= f.association :ingredient, class: "select2" %>
+
+<%= f.submit "Add Dose", class: "btn btn-primary" %>
+<% end %>
+</div>
+</div>
+
+
+
+
 
