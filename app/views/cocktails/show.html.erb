@@ -3,13 +3,14 @@
   <div class="container">
     <h1 class="text-center"><%=@cocktail.name%> </h1>
   </div>
-</div>
+</div> 
 
 
 
 <div class="container">
 
-<div class="d-flex justify-content-between">
+<div class="d-flex justify-content-between p-4">
+<%= image_tag  "#{@cocktail.image_url}", size:"400x450" %>
 <div class="cocktails">
 <h2>Ingredients:</h2>
 <% @cocktail.doses.each do |dose| %>
@@ -29,12 +30,12 @@
 <% end %>
 </div>
 
-<div class="ingredient-form">
+<div class="ingredient-form ">
 <%= simple_form_for [@cocktail, @dose]  do |f| %>
 <%= f.input :description %>
 <%= f.association :ingredient, input_html: {class:"select2"} %>
 
-<%= f.submit "Add Dose", class: "btn btn-primary" %>
+<%= f.submit "Add Dose", class: "btn btn-outline-secondary" %>
 <% end %>
 </div>
 </div>

@@ -8,16 +8,20 @@
 
 
 <div class="container">
+<%= form_tag(cocktails_path, method: :get, class: "center") do %>
+  <%= text_field_tag(:search, params[:search]) %>
+  <%= submit_tag("Go!", class: "btn btn-outline-secondary") %>
+  <%end%>
 <div class="cards m-2">
 
     <% @cocktails.each do |cocktail| %>
-<div data-aos="fade-up"
+<div data-aos="zoom-in-up"
      data-aos-duration="3000">
       <div class="card m-2 " >
         <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
           <div class="card-body">
             <h5 class="card-title"><%= cocktail.name %></h5>
-              <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary" %>
+              <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary h-1" %>
           </div>
       </div>
 </div>

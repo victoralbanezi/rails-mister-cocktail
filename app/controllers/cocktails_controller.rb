@@ -1,6 +1,11 @@
 class CocktailsController < ApplicationController
   def index
+   if params[:search].nil?
     @cocktails = Cocktail.all
+   else
+    @cocktails = Cocktail.where('name LIKE ?', "%#{params[:search]}%")
+   end
+
   end
 
   def create
@@ -21,9 +26,23 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
+  def search(search)
+    if search
+      cocktails = Cocktail.find_by(name: search)
+      if cocktails 
+        self.where(name: cocktails)
+      else
+        Cocktail.all
+      end
+    else
+      Cocktail.all
+    end
+  
+  end
+
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name, :image_url)
+    params.require(:cocktail).permit(:name, :image_url, :search)
   end
 end
