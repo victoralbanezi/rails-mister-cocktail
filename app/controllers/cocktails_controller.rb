@@ -24,21 +24,9 @@ class CocktailsController < ApplicationController
   def show
     @cocktail = Cocktail.find(params[:id])
     @dose = Dose.new
+    @review = Review.new
   end
 
-  def search(search)
-    if search
-      cocktails = Cocktail.find_by(name: search)
-      if cocktails 
-        self.where(name: cocktails)
-      else
-        Cocktail.all
-      end
-    else
-      Cocktail.all
-    end
-  
-  end
 
   private
 

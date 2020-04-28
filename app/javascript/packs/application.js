@@ -22,7 +22,7 @@ $ (function () {
 
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 import { initSelect2 } from '../components/init_select2';
-import { loadDynamicBannerText } from '../components/banner';
+import { loadDynamicBannerText, loadDynamicSearchText } from '../components/init_typed';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
@@ -30,6 +30,7 @@ document.addEventListener('turbolinks:load', () => {
   initSelect2();
   loadDynamicBannerText();
   initUpdateNavbarOnScroll();
+  loadDynamicSearchText();
 });
 
 

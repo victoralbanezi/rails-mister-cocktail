@@ -40,8 +40,18 @@
 </div>
 </div>
 </div>
+<% @cocktail.reviews.each do |review| %>
 
+<p><%= review.content %></p> 
+<p><%= review.rating %></p> 
+<% end %>
 
+<%= simple_form_for [@cocktail, @review]  do |f| %>
+<%= f.input :content %>
+<%= f.input :rating %>
+
+<%= f.submit "Add review", class: "btn btn-outline-secondary" %>
+<% end %>
 
 
 
