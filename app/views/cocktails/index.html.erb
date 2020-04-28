@@ -1,40 +1,42 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1468072114808-903e572b8ead?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80);">
   <div class="container">
     <h1 class= "text-center" id="banner-typed-text"></h1>
-
+    
   </div>
 </div>
 
 
 
 <div class="container">
-<div class="search-bar">
-<%= form_tag(cocktails_path, method: :get) do %>
-  <%= text_field_tag(:search, params[:search], placeholder: "Search") %>
-  <%= submit_tag("Go!", class: "btn btn-primary") %>
-  <%end%>
-</div>
-<div class="cards m-2">
-
-    <% @cocktails.each do |cocktail| %>
-<div data-aos="zoom-in-up"
-     data-aos-duration="3000">
-      <div class="card m-2 " >
-        <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
-          <div class="card-body">
-            <h5 class="card-title"><%= cocktail.name %></h5>
-              <%cocktail.avg%>
-                <%  cocktail.average_rating.times do%>
-               <i class="fas fa-star"></i>
-                <% end %>
-              <% (5-cocktail.average_rating).times do%>
-                <i class="far fa-star"></i>
-                <% end %>
-              <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary h-1" %>
-          </div>
-      </div>
-</div>
-    <% end %> 
+  <div class="search-bar form-goup d-flex">
+    <%= form_tag(cocktails_path, method: :get) do %>
+    <%= text_field_tag(:search, params[:search], placeholder: "Search") %>
+    <%= submit_tag("Go!", class: "btn btn-primary") %>
+    <%end%>
   </div>
+  <div class="cards m-2">
+    
+    <% @cocktails.each do |cocktail| %>
+    <div data-aos="zoom-in-up"
+    data-aos-duration="3000">
+    <div class="card m-2 " >
+      <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
+      <div class="card-body">
+        <h5 class="card-title"><%= cocktail.name %></h5>
+        <%cocktail.avg%>
+        <div class="avg-rating">
+          <%  cocktail.average_rating.times do%>
+          <i class="fas fa-star"></i>
+          <% end %>
+          <% (5-cocktail.average_rating).times do%>
+          <i class="far fa-star"></i>
+          <% end %>
+        </div>
+        <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary h-1" %>
+      </div>
+    </div>
+  </div>
+  <% end %> 
+</div>
 
 </div>

@@ -13,8 +13,9 @@ class ReviewsController < ApplicationController
         if @review.save
           redirect_to cocktail_path(@cocktail)
         else
-            redirect_to cocktail_path(@cocktail)   
-             end
+            # render "cocktails/show"
+            redirect_to cocktail_path(@cocktail)
+        end
     end
 
 

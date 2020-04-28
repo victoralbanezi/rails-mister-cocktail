@@ -42,12 +42,14 @@
   <h2>Reviews</h2>
   <% @cocktail.reviews.each do |review| %>
   <div class="review d-flex">
+  <div class="rating d-flex">
     <p><%  review.rating.times do%></p> 
     <i class="fas fa-star"></i>
     <% end %>
         <p><% (5-review.rating).times do%></p> 
     <i class="far fa-star"></i>
     <% end %>
+  </div>
     <div class="review-content pl-3">
     <p>     <%=     review.content %></p> 
     </div>
