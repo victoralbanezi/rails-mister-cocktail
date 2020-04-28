@@ -23,6 +23,13 @@
         <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %>  
           <div class="card-body">
             <h5 class="card-title"><%= cocktail.name %></h5>
+              <%cocktail.avg%>
+                <%  cocktail.average_rating.times do%>
+               <i class="fas fa-star"></i>
+                <% end %>
+              <% (5-cocktail.average_rating).times do%>
+                <i class="far fa-star"></i>
+                <% end %>
               <%= link_to  "Details", cocktail_path(cocktail), class: "btn btn-primary h-1" %>
           </div>
       </div>

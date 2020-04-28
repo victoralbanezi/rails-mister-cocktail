@@ -280,9 +280,6 @@ Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/col
 Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-
-
-
 Cocktail.create(name: "Lemon Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Strawberry Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Mango Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
@@ -292,3 +289,19 @@ Cocktail.create(name: "Cachaça Caipirinha", image_url: "https://source.unsplash
 Cocktail.create(name: "Grape Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Kiwi Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
 Cocktail.create(name: "Sake Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+
+puts "Creating doses"
+400.times do
+seed = Dose.create(cocktail_id: rand(1..59), ingredient_id: rand(1..100), description: "#{["50","100","150","200","300","400","500"].sample}ml")
+puts seed.id
+end
+puts "Doses created"
+
+puts "creating reviews"
+
+500.times do
+    review = Review.create(content: ["Good", "Bad", "Very Good", "Delicious", "Disgusting"].sample, cocktail_id: rand(1..59), rating: rand(1..5))
+    puts review.id
+end
+puts "Reviews created"
+

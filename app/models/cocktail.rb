@@ -5,4 +5,8 @@ class Cocktail < ApplicationRecord
   has_many :ingredients, through: :doses
   validates :image_url, presence: true
   has_many :reviews, dependent: :destroy
+
+   def avg
+    self.average_rating = Review.where("cocktail_id = #{self.id}").sum(:rating) / Review.where("cocktail_id =#{self.id}").count
+  end
 end
