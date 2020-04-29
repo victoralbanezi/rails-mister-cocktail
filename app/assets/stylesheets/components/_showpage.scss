@@ -7,6 +7,7 @@
 
 .cocktail-image{
     grid-template-columns: 1fr;
+    // margin: 0 auto;
     // background-color: red;
 }
 .cocktails{
@@ -26,6 +27,10 @@
     .teste {
       grid-template-columns: 1fr;
     }
+
+    .cocktail-image {
+      margin: 0 auto;
+  }
   }
     
     // Small devices (landscape phones, 576px and up)
@@ -33,6 +38,9 @@
       .teste {
         grid-template-columns: 1fr;
       }
+      .cocktail-image {
+        margin: 0 auto;
+    }
     }
     
     // Medium devices (tablets, 768px and up)

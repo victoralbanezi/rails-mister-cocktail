@@ -8,9 +8,9 @@
 
 <div class="container">
 
-    <div class="teste p-4">
+    <div class="teste p-5">
         <div class="cocktail-image">
-        <%= cl_image_tag @cocktail.photo.key, height: 400, width: 450  %>
+        <%= cl_image_tag @cocktail.photo.key, height: 300, width: 350  %>
         </div>
         <div class="cocktails">
             <h2>Ingredients:</h2>
@@ -36,7 +36,7 @@
     <div class="reviews text-center">
         <h2>Reviews</h2>
         <% @cocktail.reviews.each do |review| %>
-        <div class="review d-flex">
+        <div class="review d-flex justify-content-center">
             <div class="rating d-flex">
                 <p><%  review.rating.times do%></p>
                 <i class="fas fa-star"></i>
