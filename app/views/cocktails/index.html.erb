@@ -21,7 +21,7 @@
     
     <% @cocktails.each do |cocktail| %>
     <div data-aos="zoom-in-up"
-    data-aos-duration="3000">
+    data-aos-duration="1000">
     <div class="card m-2 " >
       <%# <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %> 
       <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, class:"card-img-top"  %>
