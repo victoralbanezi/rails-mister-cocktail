@@ -1,69 +1,62 @@
-
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>);">
-  <div class="container">
-    <h1 class="text-center"><%=@cocktail.name%> </h1>
-  </div>
-</div> 
+    <div class="container">
+        <h1 class="text-center"><%=@cocktail.name%> </h1>
+    </div>
+</div>
 
 
 
 <div class="container">
 
-<div class="d-flex justify-content-between p-4">
-<%= cl_image_tag @cocktail.photo.key, height: 400, width: 450  %>
-<div class="cocktails">
-<h2>Ingredients:</h2>
-<% @cocktail.doses.each do |dose| %>
+    <div class="teste p-4">
+        <div class="cocktail-image">
+        <%= cl_image_tag @cocktail.photo.key, height: 400, width: 450  %>
+        </div>
+        <div class="cocktails">
+            <h2>Ingredients:</h2>
+            <% @cocktail.doses.each do |dose| %>
 
-<p><%= dose.ingredient.name %> - <%= dose.description %> 
-<%= link_to "Remove ",
- dose_path(dose),
-  method: :delete,
-  data: {confirm: "Are you sure ?" } %></p>
-  
+            <p><%= dose.ingredient.name %> - <%= dose.description %>
+                <%= link_to "Remove ",
+                  dose_path(dose),
+                       method: :delete,
+                        data: {confirm: "Are you sure ?" } %></p>
+            <% end %>
+        </div>
 
+        <div class="ingredient-form ">
+            <%= simple_form_for [@cocktail, @dose]  do |f| %>
+            <%= f.input :description %>
+            <%= f.association :ingredient, input_html: {class:"select2"} %>
 
-
-
-
-<% end %>
-</div>
-
-<div class="ingredient-form ">
-<%= simple_form_for [@cocktail, @dose]  do |f| %>
-<%= f.input :description %>
-<%= f.association :ingredient, input_html: {class:"select2"} %>
-
-<%= f.submit "Add Dose", class: "btn btn-outline-secondary" %>
-<% end %>
-</div>
-</div>
-<div class="reviews text-center">
-  <h2>Reviews</h2>
-  <% @cocktail.reviews.each do |review| %>
-  <div class="review d-flex">
-  <div class="rating d-flex">
-    <p><%  review.rating.times do%></p> 
-    <i class="fas fa-star"></i>
-    <% end %>
-        <p><% (5-review.rating).times do%></p> 
-    <i class="far fa-star"></i>
-    <% end %>
-  </div>
-    <div class="review-content pl-3">
-    <p>     <%=     review.content %></p> 
+            <%= f.submit "Add Dose", class: "btn btn-outline-secondary" %>
+            <% end %>
+        </div>
     </div>
-  </div>
-  <% end %>
-  </div>
+    <div class="reviews text-center">
+        <h2>Reviews</h2>
+        <% @cocktail.reviews.each do |review| %>
+        <div class="review d-flex">
+            <div class="rating d-flex">
+                <p><%  review.rating.times do%></p>
+                <i class="fas fa-star"></i>
+                <% end %>
+                <p><% (5-review.rating).times do%></p>
+                <i class="far fa-star"></i>
+                <% end %>
+            </div>
+            <div class="review-content pl-3">
+                <p> <%=     review.content %></p>
+            </div>
+        </div>
+        <% end %>
+    </div>
 
-<%= simple_form_for [@cocktail, @review]  do |f| %>
-<%= f.input :content %>
-<%= f.input :rating, :collection => %w[1 2 3 4 5], include_blank: false%>
+    <%= simple_form_for [@cocktail, @review]  do |f| %>
+    <%= f.input :content %>
+    <%= f.input :rating, :collection => %w[1 2 3 4 5], include_blank: false%>
 
-<%= f.submit "Add review", class: "btn btn-outline-secondary" %>
-<% end %>
+    <%= f.submit "Add review", class: "btn btn-outline-secondary" %>
+    <% end %>
 
 </div>
-
-

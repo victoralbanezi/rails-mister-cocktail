@@ -1,0 +1,57 @@
+.teste{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+
+.cocktail-image{
+    grid-template-columns: 1fr;
+    // background-color: red;
+}
+.cocktails{
+    grid-template-columns: 1fr;
+    // background-color: red;
+}
+
+.ingredient-form{
+    grid-template-columns: 1fr;
+    // background-color: red;
+}
+
+
+
+
+@media (min-width: 300px) {
+    .teste {
+      grid-template-columns: 1fr;
+    }
+  }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+      .teste {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      .teste {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    // Large devices (desktops, 992px and up)
+    // @media (min-width: 992px) {
+    //   .teste {
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //   }
+    // }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+      .teste {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }

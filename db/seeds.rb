@@ -12,23 +12,21 @@ names.each do |name|
     cocktail = Cocktail.new(name: name)
     cocktail.photo.attach(io: file, filename: 'photo.jpg', content_type: 'image/jpg')
     cocktail.save
-    sleep(2)
-    puts "created #{cocktail.id}"
 end
 
 
 puts "Creating doses"
 400.times do
 seed = Dose.create(cocktail_id: rand(1..59), ingredient_id: rand(1..100), description: "#{["50","100","150","200","300","400","500"].sample}ml")
-puts seed.id
-end
-puts "Doses created"
 
-puts "creating reviews"
+end
+
+
+
 
 500.times do
     review = Review.create(content: ["Good", "Bad", "Very Good", "Delicious", "Disgusting"].sample, cocktail_id: rand(1..59), rating: rand(1..5))
     puts review.id
 end
-puts "Reviews created"
+
 

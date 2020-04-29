@@ -8,11 +8,14 @@
 
 
 <div class="container">
-  <div class="search-bar form-goup d-flex">
-    <%= form_tag(root_path, method: :get) do %>
-    <%= text_field_tag(:search, params[:search], placeholder: "Search") %>
+  <div class="search-bar justify-content-between m-3">
+    <%= form_tag(root_path, method: :get, class: "w-100 d-flex justify-content-between")  do %>
+    <%= text_field_tag(:search, params[:search], placeholder: "Search", class: "flex-fill flex-grow w-75") %>
     <%= submit_tag("Go!", class: "btn btn-primary") %>
     <%end%>
+
+    
+    
   </div>
   <div class="cards m-2">
     
@@ -21,7 +24,7 @@
     data-aos-duration="3000">
     <div class="card m-2 " >
       <%# <%= image_tag  "#{cocktail.image_url}", class: "card-img-top" %> 
-      <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill, class:"card-img-top"  %>
+      <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, class:"card-img-top"  %>
       <div class="card-body">
         <h5 class="card-title"><%= cocktail.name %></h5>
         
