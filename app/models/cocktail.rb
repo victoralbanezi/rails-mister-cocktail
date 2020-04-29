@@ -3,9 +3,8 @@ class Cocktail < ApplicationRecord
   validates :name, uniqueness: true
   has_many :doses, dependent: :destroy
   has_many :ingredients, through: :doses
-  validates :image_url, presence: true
   has_many :reviews, dependent: :destroy
-
+  has_one_attached :photo
   
   # average_rating: = self.avg
   # before_save :avg

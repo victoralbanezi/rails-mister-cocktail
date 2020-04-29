@@ -1,3 +1,195 @@
+require "open-uri"
+name = ["Rough Fluff"
+,"Mead Smash"
+,"Vanillabean Major"
+,"High Tremor"
+,"Black Brandy"
+,"Nasty Nectar"
+,"Lemonade Coffee"
+,"Garlic Eye"
+,"Kiwi Tea"
+,"Pure Six"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Flaming Six"
+,"Grapefruit Cooler"
+,"Almond Lord"
+,"Red Wine Heaven"
+,"Fallen Snowball"
+,"Tea Smash"
+,"Lemon Special"
+,"Summer Squeeze"
+,"Watermelon Tea"
+,"Almond Stardust"
+,"Rose Petal Hopper"
+,"Crimson White Win"
+,"Insanity Gloom"
+,"Sherry Shrub"
+,"Warm Riddle"
+,"Amazing Blood"
+,"Arctic Red Wine"
+,"Dark Ale Riddle"
+,"Pear Ball"
+,"Coriander Bomb"
+,"Demonic Stardust"
+,"Sugary Dark Beer"
+,"Jasmine Shadow"
+,"First Lord"
+,"Basil Crash"
+,"Tropical Bolt"
+,"Wine Tickle"
+,"Whiskey Touch"
+,"Steamy Flash"
+,"Wasabi Tonic"
+,"Rough Fluff"
+,"Vanillabean Major"
+,"Mead Smash"
+,"High Tremor"
+,"Black Brandy"
+,"Nasty Nectar"
+,"Lemonade Coffee"
+,"Garlic Eye"
+,"Kiwi Tea"
+,"Pure Six"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Flaming Six"
+,"Grapefruit Cooler"
+,"Almond Lord"
+,"Red Wine Heaven"
+,"Fallen Snowball"
+,"Tea Smash"
+,"Lemon Special"
+,"Summer Squeeze"
+,"Watermelon Tea"
+,"Almond Stardust"
+,"Rose Petal Hopper"
+,"Crimson White Win"
+,"Insanity Gloom"
+,"Sherry Shrub"
+,"Warm Riddle"
+,"Amazing Blood"
+,"Arctic Red Wine"
+,"Dark Ale Riddle"
+,"Pear Ball"
+,"Coriander Bomb"
+,"Demonic Stardust"
+,"Sugary Dark Beer"
+,"Jasmine Shadow"
+,"First Lord"
+,"Basil Crash"
+,"Tropical Bolt"
+,"Wine Tickle"
+,"Whiskey Touch"
+,"Steamy Flash"
+,"Wasabi Tonic"
+,"Rough Fluff"
+,"Vanillabean Major"
+,"Mead Smash"
+,"High Tremor"
+,"Black Brandy"
+,"Nasty Nectar"
+,"Lemonade Coffee"
+,"Garlic Eye"
+,"Kiwi Tea"
+,"Pure Six"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Burning Wink"
+,"Mead Amigo"
+,"Unlucky Smooch"
+,"Wonderful Kisses"
+,"Lime Velour"
+,"Precious Blossom"
+,"Lavender Horror"
+,"Angelic Special"
+,"Lucky Squeeze"
+,"Red Plus"
+,"Flaming Six"
+,"Grapefruit Cooler"
+,"Almond Lord"
+,"Red Wine Heaven"
+,"Fallen Snowball"
+,"Tea Smash"
+,"Lemon Special"
+,"Summer Squeeze"
+,"Watermelon Tea"
+,"Almond Stardust"
+,"Rose Petal Hopper"
+,"Crimson White Win"
+,"Insanity Gloom"
+,"Sherry Shrub"
+,"Warm Riddle"
+,"Amazing Blood"
+,"Arctic Red Wine"
+,"Dark Ale Riddle"
+,"Pear Ball"
+,"Coriander Bomb"
+,"Demonic Stardust"
+,"Sugary Dark Beer"
+,"Jasmine Shadow"
+,"First Lord"
+,"Basil Crash"
+,"Tropical Bolt"
+,"Wine Tickle"
+,"Whiskey Touch"
+,"Steamy Flash"
+,"Wasabi Tonic"
+,"Lemon Caipirinha"
+,"Strawberry Caipirinha"
+,"Mango Caipirinha"
+,"Pineapple Caipirinha"
+,"Vodka Caipirinha"
+,"Cachaça Caipirinha"
+,"Grape Caipirinha"
+,"Kiwi Caipirinha"
+,"Sake Caipirinha"]
+
+
 Ingredient.create(name: "Light rum")
 Ingredient.create(name: "Applejack")
 Ingredient.create(name: "Gin")
@@ -99,196 +291,209 @@ Ingredient.create(name: "Peppermint schnapps")
 Ingredient.create(name: "Creme de Cassis")
 Ingredient.create(name: "Jack Daniels")
 
+4.times do
+puts "creating Cocktails"
 
-Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Lemon Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Strawberry Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Mango Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Pineapple Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Vodka Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Cachaça Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Grape Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Kiwi Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
-Cocktail.create(name: "Sake Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+file = URI.open("https://images.unsplash.com/photo-1527762055594-4956c0c8c617?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9")
+cocktail = Cocktail.new(name: name.sample)
+cocktail.photo.attach(io: file, filename: 'photo.jpg', content_type: 'image/jpg')
+cocktail.save
+
+end
+
+# Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Rough Fluff", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Vanillabean Major", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "High Tremor", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Black Brandy", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Nasty Nectar", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemonade Coffee", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Garlic Eye", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Kiwi Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pure Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Burning Wink", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mead Amigo", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Unlucky Smooch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wonderful Kisses", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lime Velour", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Precious Blossom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lavender Horror", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Angelic Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lucky Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Plus", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Flaming Six", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Grapefruit Cooler", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Red Wine Heaven", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Fallen Snowball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tea Smash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemon Special", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Summer Squeeze", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Watermelon Tea", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Almond Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Rose Petal Hopper", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Crimson White Win", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Insanity Gloom", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sherry Shrub", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Warm Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Amazing Blood", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Arctic Red Wine", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Dark Ale Riddle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pear Ball", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Coriander Bomb", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Demonic Stardust", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sugary Dark Beer", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Jasmine Shadow", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "First Lord", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Basil Crash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Tropical Bolt", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wine Tickle", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Whiskey Touch", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Steamy Flash", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Wasabi Tonic", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Lemon Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Strawberry Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Mango Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Pineapple Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Vodka Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Cachaça Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Grape Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Kiwi Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+# Cocktail.create(name: "Sake Caipirinha", image_url: "https://source.unsplash.com/collection/962396/#{rand(1..280)}")
+
+
+
+
 
 puts "Creating doses"
 400.times do
