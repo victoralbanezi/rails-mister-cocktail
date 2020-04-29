@@ -4,7 +4,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const initAos = () => {
 
-    console.log("teste");
     AOS.init ();
 };
 
